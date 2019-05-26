@@ -18,15 +18,15 @@ namespace testing
         Point pointTextBox;
         Point pointButton;
         List<string> list = new List<string>();
-        RadRadioButton[] arreyRadio = new RadRadioButton[10];
+        RadCheckBox[] arreyRadio = new RadCheckBox[10];
         RadTextBox[] arreyTextBox = new RadTextBox[10];
         int stopQuestion = 0;
         int countQuestion = 0;
         int qualityQuestion = 1;
         int numberQuestion = 1;
-        private RadRadioButton addAnswerRadio(int nameCount)
+        private RadCheckBox addAnswerRadio(int nameCount)
         {
-            RadRadioButton radRadioButton = new RadRadioButton();
+            RadCheckBox radRadioButton = new RadCheckBox();
             radRadioButton.ThemeName = "Fluent";
             radRadioButton.Name = "radAnswerRadio" + ++nameCount;
             radRadioButton.Text = "";
@@ -172,7 +172,7 @@ namespace testing
                 arreyTextBox[a] = textBox;
                 a++;
             }
-            foreach (RadRadioButton radio in radPanel1.Controls.OfType<RadRadioButton>())
+            foreach (RadCheckBox radio in radPanel1.Controls.OfType<RadCheckBox>())
             {
                 arreyRadio[b] = radio;
                 b++;
@@ -199,7 +199,7 @@ namespace testing
         {
             InitializeComponent();
             pointTextBox = new Point(radAnswerTextBox1.Location.X, radAnswerTextBox1.Location.Y);
-            pointRadio = new Point(radAnswerRadio1.Location.X, radAnswerRadio1.Location.Y);
+            pointRadio = new Point(radAnswerCheckbox1.Location.X, radAnswerCheckbox1.Location.Y);
             pointButton = new Point(radButton1.Location.X, radButton1.Location.Y);
         }
 
@@ -217,33 +217,43 @@ namespace testing
         {
             if (qualityQuestion == numberQuestion || qualityQuestion - numberQuestion == 1) //если номер вопроса равен количеству вопросов то добавляется новый в конец массива
             {
-                list.Add("?" + radTextBox2.Text);
-                int i = 0;
+
                 int j = 0;
+                int i = 0;
+                if (qualityQuestion == numberQuestion)
+                {
+                    list.Add("?" + radTextBox2.Text);
+
+                    foreach (RadTextBox textBox in radPanel1.Controls.OfType<RadTextBox>())
+                    {
+                        arreyTextBox[i] = textBox;
+                        i++;
+                    }
+                    foreach (RadCheckBox radio in radPanel1.Controls.OfType<RadCheckBox>())
+                    {
+                        arreyRadio[j] = radio;
+                        j++;
+                    }
+                    for (int w = 0; w < 10; w++)
+                    {
+                        if (arreyRadio[w] == null)
+                        {
+                            break;
+                        }
+                        if (arreyTextBox[w].Name.Substring(arreyTextBox[w].Name.Length - 1) == arreyRadio[w].Name.Substring(arreyRadio[w].Name.Length - 1) && arreyRadio[w].IsChecked)
+                        {
+                            list.Add("+" + arreyTextBox[w].Text);
+                        }
+                        else
+                        {
+                            list.Add("-" + arreyTextBox[w].Text);
+                        }
+                    }
+                }
+                i = 0;
                 foreach (RadTextBox textBox in radPanel1.Controls.OfType<RadTextBox>())
                 {
-                    arreyTextBox[i] = textBox;
                     i++;
-                }
-                foreach (RadRadioButton radio in radPanel1.Controls.OfType<RadRadioButton>())
-                {
-                    arreyRadio[j] = radio;
-                    j++;
-                }
-                for (int w = 0; w < 10; w++)
-                {
-                    if (arreyRadio[w] == null)
-                    {
-                        break;
-                    }
-                    if (arreyTextBox[w].Name.Substring(arreyTextBox[w].Name.Length - 1) == arreyRadio[w].Name.Substring(arreyRadio[w].Name.Length - 1) && arreyRadio[w].IsChecked)
-                    {
-                        list.Add("+" + arreyTextBox[w].Text);
-                    }
-                    else
-                    {
-                        list.Add("-" + arreyTextBox[w].Text);
-                    }
                 }
 
                 for (int w = 0; w < i - 1; w++)
@@ -251,7 +261,8 @@ namespace testing
                     removeAnswer();
                 }
 
-                radAnswerRadio1.IsChecked = true;
+
+                radAnswerCheckbox1.IsChecked = true;
                 radTextBox2.Text = "";
                 radAnswerTextBox1.Text = "";
                 Array.Clear(arreyRadio, 0, arreyRadio.Length);
@@ -316,6 +327,7 @@ namespace testing
                     numberQuestion = 1;
                     qualityQuestionLabel.Text = "0";
                 }
+                saveFileDialog1.FileName = "";
             }
         }
     }

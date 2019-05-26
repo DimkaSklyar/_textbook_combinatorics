@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadForm1));
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.radTextBox2 = new Telerik.WinControls.UI.RadTextBox();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
+            this.radAnswerCheckbox1 = new Telerik.WinControls.UI.RadCheckBox();
             this.radButton5 = new Telerik.WinControls.UI.RadButton();
             this.radButton1 = new Telerik.WinControls.UI.RadButton();
             this.radAnswerTextBox1 = new Telerik.WinControls.UI.RadTextBox();
-            this.radAnswerRadio1 = new Telerik.WinControls.UI.RadRadioButton();
             this.radButton2 = new Telerik.WinControls.UI.RadButton();
             this.radButton3 = new Telerik.WinControls.UI.RadButton();
             this.radButton4 = new Telerik.WinControls.UI.RadButton();
@@ -44,10 +45,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radAnswerCheckbox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radAnswerTextBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radAnswerRadio1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).BeginInit();
@@ -74,15 +75,23 @@
             // radPanel1
             // 
             this.radPanel1.AutoScroll = true;
+            this.radPanel1.Controls.Add(this.radAnswerCheckbox1);
             this.radPanel1.Controls.Add(this.radButton5);
             this.radPanel1.Controls.Add(this.radButton1);
             this.radPanel1.Controls.Add(this.radAnswerTextBox1);
-            this.radPanel1.Controls.Add(this.radAnswerRadio1);
             this.radPanel1.Location = new System.Drawing.Point(12, 173);
             this.radPanel1.Name = "radPanel1";
             this.radPanel1.Size = new System.Drawing.Size(486, 263);
             this.radPanel1.TabIndex = 2;
             this.radPanel1.ThemeName = "Fluent";
+            // 
+            // radAnswerCheckbox1
+            // 
+            this.radAnswerCheckbox1.Location = new System.Drawing.Point(16, 19);
+            this.radAnswerCheckbox1.Name = "radAnswerCheckbox1";
+            this.radAnswerCheckbox1.Size = new System.Drawing.Size(18, 18);
+            this.radAnswerCheckbox1.TabIndex = 3;
+            this.radAnswerCheckbox1.ThemeName = "Fluent";
             // 
             // radButton5
             // 
@@ -113,17 +122,6 @@
             this.radAnswerTextBox1.Size = new System.Drawing.Size(429, 29);
             this.radAnswerTextBox1.TabIndex = 1;
             this.radAnswerTextBox1.ThemeName = "Fluent";
-            // 
-            // radAnswerRadio1
-            // 
-            this.radAnswerRadio1.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.radAnswerRadio1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radAnswerRadio1.Location = new System.Drawing.Point(18, 20);
-            this.radAnswerRadio1.Name = "radAnswerRadio1";
-            this.radAnswerRadio1.Size = new System.Drawing.Size(16, 18);
-            this.radAnswerRadio1.TabIndex = 0;
-            this.radAnswerRadio1.ThemeName = "Fluent";
-            this.radAnswerRadio1.ToggleState = Telerik.WinControls.Enumerations.ToggleState.On;
             // 
             // radButton2
             // 
@@ -178,7 +176,9 @@
             // 
             // saveFileDialog1
             // 
+            this.saveFileDialog1.DefaultExt = "tst";
             this.saveFileDialog1.FileName = "test.tst";
+            this.saveFileDialog1.Filter = "Файлы теста | *.tst";
             // 
             // RadForm1
             // 
@@ -192,21 +192,25 @@
             this.Controls.Add(this.radButton2);
             this.Controls.Add(this.radPanel1);
             this.Controls.Add(this.radTextBox2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "RadForm1";
             // 
             // 
             // 
             this.RootElement.ApplyShapeToControl = true;
-            this.Text = "Создание тестирования";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Создание теста";
             this.ThemeName = "Fluent";
             ((System.ComponentModel.ISupportInitialize)(this.radTextBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).EndInit();
             this.radPanel1.ResumeLayout(false);
             this.radPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radAnswerCheckbox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radAnswerTextBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.radAnswerRadio1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.radButton4)).EndInit();
@@ -225,7 +229,6 @@
         private Telerik.WinControls.UI.RadPanel radPanel1;
         private Telerik.WinControls.UI.RadButton radButton1;
         private Telerik.WinControls.UI.RadTextBox radAnswerTextBox1;
-        private Telerik.WinControls.UI.RadRadioButton radAnswerRadio1;
         private Telerik.WinControls.UI.RadButton radButton2;
         private Telerik.WinControls.UI.RadButton radButton3;
         private Telerik.WinControls.UI.RadButton radButton4;
@@ -233,5 +236,6 @@
         private Telerik.WinControls.UI.RadLabel radLabel1;
         private Telerik.WinControls.UI.RadLabel qualityQuestionLabel;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private Telerik.WinControls.UI.RadCheckBox radAnswerCheckbox1;
     }
 }

@@ -35,24 +35,25 @@
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
+            this.radMenuItem5 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem2 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem3 = new Telerik.WinControls.UI.RadMenuItem();
             this.radMenuItem4 = new Telerik.WinControls.UI.RadMenuItem();
+            this.radMenuItem6 = new Telerik.WinControls.UI.RadMenuItem();
             this.radSplitContainer1 = new Telerik.WinControls.UI.RadSplitContainer();
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
-            this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.radTreeView1 = new Telerik.WinControls.UI.RadTreeView();
+            this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.radMenuItem5 = new Telerik.WinControls.UI.RadMenuItem();
-            this.radMenuItem6 = new Telerik.WinControls.UI.RadMenuItem();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).BeginInit();
             this.splitPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.radTreeView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).BeginInit();
             this.splitPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.radTreeView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
@@ -76,6 +77,12 @@
             this.radMenuItem1.Name = "radMenuItem1";
             this.radMenuItem1.Text = "Файл";
             // 
+            // radMenuItem5
+            // 
+            this.radMenuItem5.Name = "radMenuItem5";
+            this.radMenuItem5.Text = "Выход";
+            this.radMenuItem5.Click += new System.EventHandler(this.radMenuItem5_Click);
+            // 
             // radMenuItem2
             // 
             this.radMenuItem2.Name = "radMenuItem2";
@@ -85,6 +92,7 @@
             // 
             this.radMenuItem3.Name = "radMenuItem3";
             this.radMenuItem3.Text = "Тестирование";
+            this.radMenuItem3.Click += new System.EventHandler(this.radMenuItem3_Click);
             // 
             // radMenuItem4
             // 
@@ -92,6 +100,11 @@
             this.radMenuItem6});
             this.radMenuItem4.Name = "radMenuItem4";
             this.radMenuItem4.Text = "Сервис";
+            // 
+            // radMenuItem6
+            // 
+            this.radMenuItem6.Name = "radMenuItem6";
+            this.radMenuItem6.Text = "О программе";
             // 
             // radSplitContainer1
             // 
@@ -127,23 +140,6 @@
             this.splitPanel1.Text = "splitPanel1";
             this.splitPanel1.ThemeName = "Fluent";
             // 
-            // splitPanel2
-            // 
-            this.splitPanel2.Controls.Add(this.webBrowser1);
-            this.splitPanel2.Location = new System.Drawing.Point(186, 0);
-            this.splitPanel2.Name = "splitPanel2";
-            // 
-            // 
-            // 
-            this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
-            this.splitPanel2.Size = new System.Drawing.Size(535, 584);
-            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.2503507F, 0F);
-            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(178, 0);
-            this.splitPanel2.TabIndex = 1;
-            this.splitPanel2.TabStop = false;
-            this.splitPanel2.Text = "splitPanel2";
-            this.splitPanel2.ThemeName = "Fluent";
-            // 
             // radTreeView1
             // 
             this.radTreeView1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
@@ -174,6 +170,23 @@
             this.radTreeView1.ThemeName = "Fluent";
             this.radTreeView1.SelectedNodeChanged += new Telerik.WinControls.UI.RadTreeView.RadTreeViewEventHandler(this.radTreeView1_SelectedNodeChanged);
             // 
+            // splitPanel2
+            // 
+            this.splitPanel2.Controls.Add(this.webBrowser1);
+            this.splitPanel2.Location = new System.Drawing.Point(186, 0);
+            this.splitPanel2.Name = "splitPanel2";
+            // 
+            // 
+            // 
+            this.splitPanel2.RootElement.MinSize = new System.Drawing.Size(25, 25);
+            this.splitPanel2.Size = new System.Drawing.Size(535, 584);
+            this.splitPanel2.SizeInfo.AutoSizeScale = new System.Drawing.SizeF(0.2503507F, 0F);
+            this.splitPanel2.SizeInfo.SplitterCorrection = new System.Drawing.Size(178, 0);
+            this.splitPanel2.TabIndex = 1;
+            this.splitPanel2.TabStop = false;
+            this.splitPanel2.Text = "splitPanel2";
+            this.splitPanel2.ThemeName = "Fluent";
+            // 
             // webBrowser1
             // 
             this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -183,16 +196,10 @@
             this.webBrowser1.Size = new System.Drawing.Size(535, 584);
             this.webBrowser1.TabIndex = 0;
             // 
-            // radMenuItem5
+            // openFileDialog1
             // 
-            this.radMenuItem5.Name = "radMenuItem5";
-            this.radMenuItem5.Text = "Выход";
-            this.radMenuItem5.Click += new System.EventHandler(this.radMenuItem5_Click);
-            // 
-            // radMenuItem6
-            // 
-            this.radMenuItem6.Name = "radMenuItem6";
-            this.radMenuItem6.Text = "О программе";
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Файлы теста | *.tst";
             // 
             // RadForm1
             // 
@@ -214,9 +221,9 @@
             this.radSplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).EndInit();
             this.splitPanel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.radTreeView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel2)).EndInit();
             this.splitPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.radTreeView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -238,5 +245,6 @@
         private System.Windows.Forms.WebBrowser webBrowser1;
         private Telerik.WinControls.UI.RadMenuItem radMenuItem5;
         private Telerik.WinControls.UI.RadMenuItem radMenuItem6;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
