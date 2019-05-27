@@ -32,12 +32,31 @@ namespace combinatorics
 
         private void radMenuItem3_Click(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
-            string[] lines = File.ReadAllLines(openFileDialog1.FileName, Encoding.Default);
-            for (int i = 0; i < lines.Length; i++)
+            openFileDialog1.FileName = "*.tst";
+            try
             {
-                list.Add(Crypto.DecryptStringAES(lines[i], "test"));
+                openFileDialog1.ShowDialog();
+                string[] lines = File.ReadAllLines(openFileDialog1.FileName, Encoding.Default);
+                for (int i = 0; i < lines.Length; i++)
+                {
+                    list.Add(Crypto.DecryptStringAES(lines[i], "test"));
+                }
+                testing testing = new testing(list, this);
+                testing.Show();
+                this.Enabled = false;
             }
+            catch (Exception)
+            {
+                MessageBox.Show("Ошибка открытия теста!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }
+
+        private void radMenuItem6_Click(object sender, EventArgs e)
+        {
+            AboutForm aboutForm = new AboutForm(this);
+            aboutForm.Show();
+            this.Enabled = false;
         }
     }
 }
