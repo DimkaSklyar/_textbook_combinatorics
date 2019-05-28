@@ -100,8 +100,14 @@ namespace combinatorics
                 foreach (RadCheckBox item in radPanel1.Controls.OfType<RadCheckBox>())
                 {
 
-
-                    checkAnswer[int.Parse(item.Name.Substring(item.Name.Length - 1)) - 1] = item.Checked;
+                    if (item.Name.Length == 15)
+                    {
+                        checkAnswer[int.Parse(item.Name.Substring(item.Name.Length - 1)) - 1] = item.Checked;
+                    }
+                    else
+                    {
+                        checkAnswer[int.Parse(item.Name.Substring(item.Name.Length - 2)) - 1] = item.Checked;
+                    }
 
                     radPanel1.Controls.Remove(item);
                     break; //important step
