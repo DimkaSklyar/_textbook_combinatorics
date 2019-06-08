@@ -100,6 +100,7 @@ namespace combinatorics
                 foreach (RadCheckBox item in radPanel1.Controls.OfType<RadCheckBox>())
                 {
 
+            
                     if (item.Name.Length == 15)
                     {
                         checkAnswer[int.Parse(item.Name.Substring(item.Name.Length - 1)) - 1] = item.Checked;
@@ -143,8 +144,12 @@ namespace combinatorics
                     }
                     if (checkAnswer[i] && list[i].Substring(0, 1) == "-")
                     {
-                        result-=.75;
+                        //result-=.75;
                     }
+                }
+                if (result <0)
+                {
+                    result = 0;
                 }
                 int countRightAnswer = 0;
                 for (int i = 0; i < list.Count; i++)

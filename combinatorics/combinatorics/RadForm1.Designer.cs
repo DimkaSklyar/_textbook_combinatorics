@@ -31,6 +31,13 @@
             Telerik.WinControls.UI.RadTreeNode radTreeNode1 = new Telerik.WinControls.UI.RadTreeNode();
             Telerik.WinControls.UI.RadTreeNode radTreeNode2 = new Telerik.WinControls.UI.RadTreeNode();
             Telerik.WinControls.UI.RadTreeNode radTreeNode3 = new Telerik.WinControls.UI.RadTreeNode();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode4 = new Telerik.WinControls.UI.RadTreeNode();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode5 = new Telerik.WinControls.UI.RadTreeNode();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode6 = new Telerik.WinControls.UI.RadTreeNode();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode7 = new Telerik.WinControls.UI.RadTreeNode();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode8 = new Telerik.WinControls.UI.RadTreeNode();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode9 = new Telerik.WinControls.UI.RadTreeNode();
+            Telerik.WinControls.UI.RadTreeNode radTreeNode10 = new Telerik.WinControls.UI.RadTreeNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadForm1));
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
@@ -42,9 +49,9 @@
             this.splitPanel1 = new Telerik.WinControls.UI.SplitPanel();
             this.radTreeView1 = new Telerik.WinControls.UI.RadTreeView();
             this.splitPanel2 = new Telerik.WinControls.UI.SplitPanel();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.radPanel1 = new Telerik.WinControls.UI.RadPanel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.radMenu1 = new Telerik.WinControls.UI.RadMenu();
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).BeginInit();
             this.radSplitContainer1.SuspendLayout();
@@ -55,8 +62,8 @@
             this.splitPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.radPanel1)).BeginInit();
             this.radPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.radMenu1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this)).BeginInit();
             this.SuspendLayout();
             // 
             // radMenuItem1
@@ -138,17 +145,40 @@
             this.radTreeView1.Location = new System.Drawing.Point(0, 0);
             this.radTreeView1.Name = "radTreeView1";
             radTreeNode1.Name = "Node1";
-            radTreeNode1.Text = "Node1";
+            radTreeNode1.Text = "Предисловие";
             radTreeNode2.Expanded = true;
             radTreeNode2.Name = "Node2";
             radTreeNode3.Name = "Node3";
-            radTreeNode3.Text = "Node3";
+            radTreeNode3.Text = "Операции над множествами";
+            radTreeNode4.Name = "Node4";
+            radTreeNode4.Text = "Комбинаторные числа и их рекуррентные соотношения";
+            radTreeNode5.Name = "Node6";
+            radTreeNode5.Text = "Свойства комбинаторных чисел";
+            radTreeNode6.Name = "Node7";
+            radTreeNode6.Text = "Принцип включения-исключения";
+            radTreeNode7.Name = "Node8";
+            radTreeNode7.Text = "Линейные рекуррентные соотношения";
             radTreeNode2.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode3});
-            radTreeNode2.Text = "Node2";
+            radTreeNode3,
+            radTreeNode4,
+            radTreeNode5,
+            radTreeNode6,
+            radTreeNode7});
+            radTreeNode2.Text = "Основные понятия и теорема комбинаторики";
+            radTreeNode8.Expanded = true;
+            radTreeNode8.Name = "Node5";
+            radTreeNode9.Name = "Node9";
+            radTreeNode9.Text = "Примеры решения задач";
+            radTreeNode10.Name = "Node10";
+            radTreeNode10.Text = "Задачи для самостоятельного решения";
+            radTreeNode8.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode9,
+            radTreeNode10});
+            radTreeNode8.Text = "Практикум";
             this.radTreeView1.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
             radTreeNode1,
-            radTreeNode2});
+            radTreeNode2,
+            radTreeNode8});
             this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radTreeView1.Size = new System.Drawing.Size(209, 557);
             this.radTreeView1.TabIndex = 0;
@@ -172,11 +202,6 @@
             this.splitPanel2.Text = "splitPanel2";
             this.splitPanel2.ThemeName = "Fluent";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "Файлы теста | *.tst";
-            // 
             // radPanel1
             // 
             this.radPanel1.Controls.Add(this.webBrowser1);
@@ -196,11 +221,10 @@
             this.webBrowser1.Size = new System.Drawing.Size(825, 557);
             this.webBrowser1.TabIndex = 0;
             // 
-            // RadForm1
+            // openFileDialog1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1042, 582);
+            this.openFileDialog1.FileName = "openFileDialog1";
+            this.openFileDialog1.Filter = "Файлы теста | *.tst";
             // 
             // radMenu1
             // 
@@ -213,6 +237,12 @@
             this.radMenu1.Size = new System.Drawing.Size(1042, 25);
             this.radMenu1.TabIndex = 0;
             this.radMenu1.ThemeName = "Fluent";
+            // 
+            // RadForm1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1042, 582);
             this.Controls.Add(this.radSplitContainer1);
             this.Controls.Add(this.radMenu1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -225,6 +255,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Учебный практикум: Комбинаторика";
             this.ThemeName = "Fluent";
+            this.Shown += new System.EventHandler(this.RadForm1_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.radSplitContainer1)).EndInit();
             this.radSplitContainer1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitPanel1)).EndInit();

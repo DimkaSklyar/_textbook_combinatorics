@@ -32,6 +32,7 @@ namespace combinatorics
 
         private void radMenuItem3_Click(object sender, EventArgs e)
         {
+            openFileDialog1.InitialDirectory = Application.StartupPath;
             openFileDialog1.FileName = "*.tst";
             try
             {
@@ -57,6 +58,12 @@ namespace combinatorics
             AboutForm aboutForm = new AboutForm(this);
             aboutForm.Show();
             this.Enabled = false;
+        }
+
+        private void RadForm1_Shown(object sender, EventArgs e)
+        {
+            Uri uri = new Uri(path + "\\files\\Предисловие.html");
+            webBrowser1.Url = uri;
         }
     }
 }

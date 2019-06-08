@@ -38,5 +38,3 @@ D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combi
 D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.pdb
 D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.testing.resources
 D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.AboutForm.resources
-C:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.AboutForm.resources
-C:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.testing.resources

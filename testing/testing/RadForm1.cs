@@ -326,6 +326,7 @@ namespace testing
                     qualityQuestion = 1;
                     numberQuestion = 1;
                     qualityQuestionLabel.Text = "0";
+                    radButton4.Enabled = false;
                 }
                 saveFileDialog1.FileName = "";
             }
