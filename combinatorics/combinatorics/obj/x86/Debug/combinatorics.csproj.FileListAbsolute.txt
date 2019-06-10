@@ -38,3 +38,13 @@ D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combi
 D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.pdb
 D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.testing.resources
 D:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.AboutForm.resources
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.AboutForm.resources
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\obj\x86\Debug\combinatorics.testing.resources
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.WinControls.PdfViewer.dll
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.Windows.Documents.Core.dll
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.Windows.Documents.Fixed.dll
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.Windows.Zip.dll
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.WinControls.PdfViewer.xml
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.Windows.Documents.Core.xml
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.Windows.Documents.Fixed.xml
+C:\_work\_textbook_combinatorics\combinatorics\combinatorics\bin\Debug\Telerik.Windows.Zip.xml

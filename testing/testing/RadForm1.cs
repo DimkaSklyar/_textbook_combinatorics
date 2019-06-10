@@ -215,82 +215,89 @@ namespace testing
 
         private void radButton3_Click(object sender, EventArgs e)
         {
-            if (qualityQuestion == numberQuestion || qualityQuestion - numberQuestion == 1) //если номер вопроса равен количеству вопросов то добавляется новый в конец массива
+            if (radTextBox2.Text != "" && radAnswerTextBox1.Text != "")
             {
 
-                int j = 0;
-                int i = 0;
-                if (qualityQuestion == numberQuestion)
+                if (qualityQuestion == numberQuestion || qualityQuestion - numberQuestion == 1) //если номер вопроса равен количеству вопросов то добавляется новый в конец массива
                 {
-                    list.Add("?" + radTextBox2.Text);
 
+                    int j = 0;
+                    int i = 0;
+                    if (qualityQuestion == numberQuestion)
+                    {
+                        list.Add("?" + radTextBox2.Text);
+
+                        foreach (RadTextBox textBox in radPanel1.Controls.OfType<RadTextBox>())
+                        {
+                            arreyTextBox[i] = textBox;
+                            i++;
+                        }
+                        foreach (RadCheckBox radio in radPanel1.Controls.OfType<RadCheckBox>())
+                        {
+                            arreyRadio[j] = radio;
+                            j++;
+                        }
+                        for (int w = 0; w < 10; w++)
+                        {
+                            if (arreyRadio[w] == null)
+                            {
+                                break;
+                            }
+                            if (arreyTextBox[w].Name.Substring(arreyTextBox[w].Name.Length - 1) == arreyRadio[w].Name.Substring(arreyRadio[w].Name.Length - 1) && arreyRadio[w].IsChecked)
+                            {
+                                list.Add("+" + arreyTextBox[w].Text);
+                            }
+                            else
+                            {
+                                list.Add("-" + arreyTextBox[w].Text);
+                            }
+                        }
+                    }
+                    i = 0;
                     foreach (RadTextBox textBox in radPanel1.Controls.OfType<RadTextBox>())
                     {
-                        arreyTextBox[i] = textBox;
                         i++;
                     }
-                    foreach (RadCheckBox radio in radPanel1.Controls.OfType<RadCheckBox>())
+
+                    for (int w = 0; w < i - 1; w++)
                     {
-                        arreyRadio[j] = radio;
-                        j++;
+                        removeAnswer();
                     }
-                    for (int w = 0; w < 10; w++)
+
+
+                    radAnswerCheckbox1.IsChecked = true;
+                    radTextBox2.Text = "";
+                    radAnswerTextBox1.Text = "";
+                    Array.Clear(arreyRadio, 0, arreyRadio.Length);
+                    Array.Clear(arreyTextBox, 0, arreyTextBox.Length);
+
+                    if (qualityQuestion == numberQuestion)
                     {
-                        if (arreyRadio[w] == null)
-                        {
-                            break;
-                        }
-                        if (arreyTextBox[w].Name.Substring(arreyTextBox[w].Name.Length - 1) == arreyRadio[w].Name.Substring(arreyRadio[w].Name.Length - 1) && arreyRadio[w].IsChecked)
-                        {
-                            list.Add("+" + arreyTextBox[w].Text);
-                        }
-                        else
-                        {
-                            list.Add("-" + arreyTextBox[w].Text);
-                        }
+                        qualityQuestion++;
                     }
+                    numberQuestion++;
+                    qualityQuestionLabel.Text = numberQuestion.ToString() + " из " + qualityQuestion.ToString();
                 }
-                i = 0;
-                foreach (RadTextBox textBox in radPanel1.Controls.OfType<RadTextBox>())
+                else
                 {
-                    i++;
+                    numberQuestion += 2;
+                    qualityQuestionLabel.Text = numberQuestion.ToString() + " из " + qualityQuestion.ToString();
+                    prevQuestion(list.Count);
                 }
-
-                for (int w = 0; w < i - 1; w++)
+                countQuestion++;
+                if (countQuestion > 0)
                 {
-                    removeAnswer();
+                    radButton4.Enabled = true;
                 }
-
-
-                radAnswerCheckbox1.IsChecked = true;
-                radTextBox2.Text = "";
-                radAnswerTextBox1.Text = "";
-                Array.Clear(arreyRadio, 0, arreyRadio.Length);
-                Array.Clear(arreyTextBox, 0, arreyTextBox.Length);
-                
-                if (qualityQuestion == numberQuestion)
+                else
                 {
-                    qualityQuestion++;
+                    radButton4.Enabled = false;
                 }
-                numberQuestion++;
-                qualityQuestionLabel.Text = numberQuestion.ToString() + " из " + qualityQuestion.ToString();
             }
             else
             {
-                numberQuestion+=2;
-                qualityQuestionLabel.Text = numberQuestion.ToString() + " из " + qualityQuestion.ToString();
-                prevQuestion(list.Count);
+                MessageBox.Show("Вопрос и ответы не могут быть пустыми!", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            countQuestion++;
-            if (countQuestion > 0)
-            {
-                radButton4.Enabled = true;
-            }
-            else
-            {
-                radButton4.Enabled = false;
-            }
-
         }
 
         private void radButton4_Click(object sender, EventArgs e)
@@ -309,6 +316,10 @@ namespace testing
 
         private void radButton2_Click(object sender, EventArgs e)
         {
+            if (radTextBox2.Text != "" && radAnswerTextBox1.Text != "")
+            {
+                radButton3.PerformClick();
+            }
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 string fileName = saveFileDialog1.FileName;

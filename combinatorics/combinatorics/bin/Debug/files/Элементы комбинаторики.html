@@ -1,0 +1,1121 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1251">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="Элементы%20комбинаторики.files/filelist.xml">
+<link rel=Edit-Time-Data href="Элементы%20комбинаторики.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Дмитрий Скляр</o:Author>
+  <o:LastAuthor>Дмитрий Скляр</o:LastAuthor>
+  <o:Revision>8</o:Revision>
+  <o:TotalTime>10</o:TotalTime>
+  <o:Created>2019-06-10T17:59:00Z</o:Created>
+  <o:LastSaved>2019-06-10T18:07:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2136</o:Words>
+  <o:Characters>12176</o:Characters>
+  <o:Lines>101</o:Lines>
+  <o:Paragraphs>28</o:Paragraphs>
+  <o:CharactersWithSpaces>14284</o:CharactersWithSpaces>
+  <o:Version>15.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="Элементы%20комбинаторики.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Элементы%20комбинаторики.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>RU</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="371">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:204;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:2.0cm 42.5pt 2.0cm 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Обычная таблица";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin-top:0cm;
+	mso-para-margin-right:0cm;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0cm;
+	line-height:107%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-fareast-language:EN-US;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=RU style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><u><span style='font-size:14.0pt;line-height:150%;color:#FF6600'>Определение:</span></u></i></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:14.0pt;line-height:
+150%'> Комбинаторика</span></b><span style='font-size:14.0pt;line-height:150%'>-это
+раздел математики, который ориентирован на решение задач выбора элементов из
+заданного конечного множества и расположения их в группы по заданным правилам и
+ограничениям. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Этот раздел математики
+тесно связан с рядом других разделов математики: теорией вероятностей, теорией
+графов, теорией чисел, теорией групп и т. д. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><b style='mso-bidi-font-weight:normal'><i style='mso-bidi-font-style:
+normal'><u><span style='font-size:14.0pt;line-height:150%;color:#FF6600'>Историческая
+справка:</span></u></i></b><span style='font-size:14.0pt;line-height:150%;
+color:#FF6600'> </span><span style='font-size:14.0pt;line-height:150%'>так как
+комбинаторика - это наука про общие законы комбинирования и образования различных
+конфигураций объектов, то с <span class=GramE>задачами <span
+style='mso-spacerun:yes'> </span>в</span> которых приходится выбирать те или
+иные предметы, располагать их в определенном порядке и отыскивать среди разных
+расположений наилучшие, люди столкнулись еще в доисторическую эпоху, выбирая
+наилучшее расположение охотников на охоте, наилучшее расположение воинов во
+время битвы. <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Комбинаторные навыки
+оказались полезными и в часы досуга. Ведь для игр в нарды, шашки, шахматы,
+которые появились позднее приходилось рассматривать различные сочетания
+передвигаемых фигур и выигрывал тот, кто их лучше изучил, знал выигрышные
+комбинации и умел избегать проигрывающих комбинаций. С комбинаторикой люди
+сталкивались во всем мире. В Китае первое упоминание о задачах, близких к
+комбинаторным встречается в китайских рукописях, относящихся к 12-13 <span
+class=SpellE>вв</span> до н.э. В этих книгах писалось, что все в мире является
+соединением двух начал – мужского и женского, которое авторы обозначали
+символами «<span class=SpellE>инь</span>» и «<span class=SpellE>янь</span>». <o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>В знаменитой китайской
+«Книге перемен» показаны различные соединения этих знаков шесть<span
+style='color:green'>, </span>размещенных в самых различных комбинациях, <span
+class=GramE>например: <span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="Рисунок_x0020_5" o:spid="_x0000_i1029" type="#_x0000_t75"
+ style='width:22.5pt;height:22.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Элементы%20комбинаторики.files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=30 height=30
+src="Элементы%20комбинаторики.files/image001.png" v:shapes="Рисунок_x0020_5"><![endif]></span><span
+style='mso-spacerun:yes'> </span>,</span> <span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_4" o:spid="_x0000_i1028" type="#_x0000_t75" style='width:22.5pt;
+ height:22.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Элементы%20комбинаторики.files/image002.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=30 height=30
+src="Элементы%20комбинаторики.files/image002.png" v:shapes="Рисунок_x0020_4"><![endif]></span><span
+style='mso-spacerun:yes'> </span>, <span style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_3" o:spid="_x0000_i1027" type="#_x0000_t75" style='width:22.5pt;
+ height:22.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Элементы%20комбинаторики.files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=30 height=30
+src="Элементы%20комбинаторики.files/image003.png" v:shapes="Рисунок_x0020_3"><![endif]></span><span
+style='mso-spacerun:yes'> </span>и т. п. По теории «Книги Перемен», весь
+мировой процесс представляет собою чередование ситуаций, происходящее от
+взаимодействия и борьбы сил света и тьмы, напряжения и податливости, и каждая
+из таких ситуаций символически выражается одним из этих знаков, которых в
+«Книге Перемен» всего 64. Они рассматриваются как символы действительности и
+называются <span class=SpellE>гексаграммами</span>.<span style='color:#FF6600'><o:p></o:p></span></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Из Китая к нам пришла
+интересная комбинаторная головоломка <span class=SpellE>танграм</span>. Квадрат
+разрезают на 7 частей. В результате получается 2 больших, 1 средний и 2
+маленьких треугольника, квадрат и параллелограмм. Из полученных фигур
+складывают различные <span class=GramE>силуэты,<span style='mso-spacerun:yes'> 
+</span>что</span> тоже требует комбинаторных навыков.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%;mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_2" o:spid="_x0000_i1026" type="#_x0000_t75" style='width:60pt;
+ height:60pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Элементы%20комбинаторики.files/image004.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=80 height=80
+src="Элементы%20комбинаторики.files/image005.jpg" v:shapes="Рисунок_x0020_2"><![endif]><!--[if gte vml 1]><v:shape
+ id="Рисунок_x0020_1" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:376.5pt;
+ height:66.75pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="Элементы%20комбинаторики.files/image006.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=502 height=89
+src="Элементы%20комбинаторики.files/image007.jpg" v:shapes="Рисунок_x0020_1"><![endif]></span><span
+style='font-size:14.0pt;line-height:150%'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Комбинаторика развивалась
+и в Древней Греции. Хотя говорить об уровне комбинаторных знаний древних греков
+затруднительно, поскольку Александрийская библиотека, в которой были собраны
+большинство научных книг – практически все научное наследие того времени,
+насчитывающее много тысяч томов, погибла при взятии Александрии. И мы можем
+только догадываться о содержании тех книг по кратким пересказам и намекам в
+сохранившихся рукописях. По этим намекам все же можно судить о том, что
+определенные представления о комбинаторике у греческих ученых все же были.
+Аристотель описал без пропусков все виды трехчленных <span class=SpellE>силлологизмов</span>,
+а его ученик <span class=SpellE>Аристоксен</span> из <span class=SpellE>Тарента</span>
+перечислил все возможные комбинации длинных и коротких слогов в стихотворных
+размерах. Живший в 4 в. н.э. математик <span class=SpellE>Папп</span>
+рассматривал число пар и троек, которые можно получить из трех элементов,
+допуская их повторения.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'><span
+style='mso-spacerun:yes'> </span>По мнению Гиппарха, из 10 утверждающих аксиом
+можно составить 103049 сочетаний, а добавив к ним отрицающие,
+310&nbsp;952.<span style='mso-spacerun:yes'>  </span>Приводимые Гиппархом числа
+слишком точны, чтобы считать их результатом грубой оценки. <span class=GramE>По
+видимому</span>, у древних греков все таки были какие то правила комбинаторных
+расчетов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Комбинаторикой занимались
+также <span class=SpellE>кабаллисты</span> и мистики. Большое развитие получили
+различные числовые суеверия и толкования, связанные <span class=GramE>с заменой
+букв</span> соответствующими цифрами. Были ученые, называвшиеся <span
+class=SpellE>кабаллистами</span>, которые подвергали такому анализу слова
+Библии и других священных писаний и делали на основе своих изысканий
+пророчества о будущем мира. Во время богословских споров, начавшихся после
+победы христианства, старались получить из имен еретиков число 666 – ведь по
+Апокалипсису это было число зверя, символ антихриста. В романе Л.Н. Толстого
+«Война и <span class=GramE>мир»<span style='mso-spacerun:yes'>  </span>Пьер</span>
+Безухов пытался вывести это число из имени Наполеона Бонапарта. Такого рода
+исследования при всей своей бесплодности давали толчок к дальнейшему развитию
+комбинаторики. Наряду с <span class=SpellE>кабаллистами</span> и мистиками
+комбинаторикой занимались астрологи.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Их интересовал вопрос о
+движении планет и их влиянии на судьбы людей. Особое значение они придавали
+сочетаниям планет – встречам различных планет в одном знаке Зодиака. Астролог
+бен <span class=SpellE>Эзра</span> в 1140 г. рассчитал количество сочетаний
+семи планет по две, по три и т.п. Он знал, что число сочетаний планет по две
+равно числу их сочетаний по пять, а число их сочетаний по три равно числу их
+сочетаний по четыре. Окончательную формулу для подсчета числа сочетаний вывел
+математик Гершон, живший в начале 14 в. Однако его работа, написанная <span
+class=GramE>на малодоступном большинству</span> ученых древнееврейском языке,
+осталась почти незамеченной. Вновь эту формулу вывел в начале 17 в. французский
+математик <span class=SpellE>Эригон</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>В начале 12 века Западная
+Европа начала пробуждаться от многовековой духовной спячки. Развитие торговли с
+востоком привело к проникновению в Европу арабской науки. Наиболее смелые и
+любознательные европейцы пробирались в находившуюся под владычеством арабов
+Испанию и знакомились там не только с творениями греческих ученых, но и
+достижениями арабской и индийской научной мысли.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Значительный толчок к
+развитию комбинаторики дали азартные игры, существовавшие еще в глубокой
+древности, но получившие свое распространение после крестовых походов.
+Наибольшее распространение получила игра в кости – два или три кубика с
+нанесенными на них очками выбрасывали на стол, и ставку брал выбросивший
+большую сумму очков игрок. В кости играли повсюду, выигрывая и проигрывая в них
+золото, замки, драгоценные камни и лошадей. <span class=SpellE>Атос</span> –
+один из героев «Трех мушкетеров» - умудрился проиграть в кости даже своего
+слугу <span class=SpellE>Гримо</span>. Несмотря на запреты церкви, игроки
+неустанно упражнялись в выбрасывании костей. И они заметили, что некоторые
+суммы выпадали редко, а другие чаще. Пытаясь понять. В чем дело, составляли
+таблицы, показывающие сколькими способами можно получить то или иное число
+очков. На первых порах иногда допускалась ошибка – подсчитывали лишь число
+различных сочетаний костей, дававших данную сумму. Например, при бросании двух
+костей сумма 6 получается из сочетаний (1,5<span class=GramE>),(</span>2,4),(3,3),
+а сумма 7 – из сочетаний (1,6),(2,5),(3,4). Так как в обоих случаях получается
+три различных сочетания с данной суммой, то можно сделать ошибочный вывод, что
+суммы очков 6,7 и 8 (также получаемая из сочетаний трех костей) должны выпадать
+одинаково часто. Но это противоречит опыту – 7 очков выпадает чаще. Дело в том,
+что при бросании двух костей сочетание (3,3) может быть получено единственным
+способом, а сочетание (3,<span class=GramE>4)-</span>двумя способами. Этим
+объясняется большая частота выпадения суммы 7.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Таким образом, оказалось,
+что надо учитывать не только сочетания очков, но и их порядок. Более сложными
+оказались исследования для трех костей. Здесь при учете порядка костей
+оказывается 216 различных комбинаций, а без учета порядка 56. Этими вопросами
+занимались такие известные итальянские математики 16 в. Как <span class=SpellE>Кардано</span>,
+Тарталья и др. Наиболее полно исследовал этот вопрос Галилео Галилей в 17 в.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Вопросами комбинаторики
+занимались Паскаль, Ферма, Лейбниц, <span class=SpellE>Гиденбург</span>.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Не только азартные игры
+давали пищу для комбинаторных измышлений математиков. Еще с давних пор
+дипломаты. Стремясь к тайне переписки, изобретали все более и более сложные
+шифры, а секретные службы других государств пытались эти шифры разгадать. Одним
+из простейших шифров была «тарабарская грамота», в которой буквы заменялись
+другими по определенным правилам. Однако такие шифры легко разгадывались по
+характерным сочетаниям букв. Поэтому стали применять шифры, основанные на
+комбинаторных принципах, например, на различных перестановках букв, заменах
+букв с использованием ключевых слов и т.д. Для кодирования и расшифровки
+привлекались математики, обладающие комбинаторными способностями.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Навыки в разгадке шифров
+помогли ученым, когда археологи стали откапывать камни и черепки с
+таинственными знаками – <span class=GramE>письменностью</span> замолкшей
+несколько тысячелетий тому назад. Археологи подвергали тексты комбинаторному
+анализу. И лишь Шампольону – ученому, сочетавшему незаурядный комбинаторный дар
+с глубочайшим знанием <span class=GramE>филологии ,</span> удалось прочесть
+иероглифы. Сложность задачи заключалась в том, что Шампольону не были известны
+ни язык надписей, ни смысл знаков. Однако, выделив знаки, которые в греческом
+тексте обозначали имена царей, Шампольон обнаружил, что некоторые знаки,
+которые в греческом тексте обозначали имена царей и некоторые знаки в именах
+фараонов Птолемея и Клеопатры совпадают. Так были найдены звучания иероглифов,
+означающих буквы «п» и «л». Затем Шампольон прочел имена римских императоров
+Тиберия и Траяна, древних фараонов Рамсеса и Тутмоса – ключ к чтению
+иероглифов, утерянный несколько тысячелетий тому назад, был вновь обретен. Это
+было торжество комбинаторного метода в чтении забытых письменностей, основанных
+на наблюдениях над текстом, на сопоставлении повторяемости комбинаций слов и
+грамматических форм с соображениями, связанными с назначением надписи, временем
+и условиями ее составления.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Когда биологи стали
+изучать передачу генетической информации у бактерий, то обнаружили, что в
+процессе этой передачи хромосомы переходят от одной бактерии к другой не
+целиком. Они надеялись, изучая перешедшие части, выяснить порядок расположения
+ген в хромосоме. Здесь их постигла на первых порах неудача – карты хромосом,
+составленные в разных лабораториях, были непохожи друг на друга. Однако
+тщательно сравнив полученные карты, французские ученые Жакоб и <span
+class=SpellE>Вальмон</span> обнаружили их комбинаторное сходство. Выяснилось,
+что все эти карты были частями одного кольца – хромосомы бактерий оказались
+свернутыми в кольца, которые перед переходом в другую бактерию разрываются,
+после чего к одному концу прикрепляется фактор, перетаскивающий часть хромосомы
+в другую бактерию. А так как разорваться кольцо могло в любом месте, а фактор
+мог прикрепиться к любому концу, то и возникало все многообразие карт, которое
+путало картину.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Одной из наиболее сложных
+загадок в биологии 20 в. Было строение «нитей жизни» - молекул белка и
+нуклеиновых кислот. Оказалось, что молекулы белка – это объединения нескольких
+длинных цепей, составленных из 20 аминокислот.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Чтобы разгадать структуру
+хотя бы одной цепи, ее отделяют от остальных и подвергают действию ферментов,
+разрывающих цепь на строго определенные части. Эти части можно подвергнуть
+химическому анализу и выяснить в них порядок аминокислот. Затем возникает
+вопрос о сборке всей цепи из изученных частей. Для этого снова берут молекулы
+белка и подвергают их действию иных ферментов. Тогда они распадаются на другие
+части, строение которых также поддается изучению. Путем изучения перекрытий
+отдельных частей удается выяснить порядок аминокислот во всей цепи. Разумеется,
+такой комбинаторный анализ требует привлечения мощной вычислительной техники.
+Сочетая комбинаторные рассмотрения с изучением рентгеновских снимков, ученым
+удалось разгадать строение многих белков, в частности гемоглобина, инсулина и
+др.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Торжеством комбинаторного
+подхода к явлениям жизни можно считать расшифровку строения
+дезоксирибонуклеиновой кислоты (ДНК), сделанную в Кембридже Криком и Уотсоном в
+1953 г.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Немного найдется дней в
+истории науки, сравнимых по своему значению с 17 февраля 1869г. В этот день из
+хаоса химических элементов, каждый из которых имел свои свойства, возникла
+стройная таблица – был открыт периодический закон. Это открытие было сделано
+Д.И. Менделеевым, профессором Петербургского университета. Готовя курс лекций
+по общей химии, он задумался <span class=GramE>над порядком</span> в котором
+следовало рассказывать об элементах. Менделеев попробовал группировать друг с
+другом не только похожие элементы, но и попробовал расположить в правильном
+порядке и сами группы. Он стал подбирать, написав на отдельных- карточках
+элементы с их атомными весами и коренными свойствами, сходные элементы и
+близкие атомные веса. Раскладывая свой химический пасьянс, великий ученый после
+напряженных измышлений нашел правильное расположение элементов. Говорят, что
+окончательная форма таблицы пришла к нему во сне, когда, утомленный непрерывным
+обдумыванием ее, он прилег отдохнуть. Удивительно, что эта работа, имевшая
+неисчислимые последствия для развития химии и физики, была выполнена
+Менделеевым за один день – 17 февраля 1869г.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Не только для открытия
+периодической таблицы Менделеева оказалась полезна комбинаторика. В физике
+комбинаторика оказывается необходимой при изучении свойств кристаллов, описании
+моделей ферромагнетизма и т.п.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>В качестве резюме
+хотелось бы перечислить некоторые области применения комбинаторики:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>в производстве это распределение
+видов работ между рабочими; в агротехнике - размещение посевов на нескольких
+полях; в учебных заведениях это составление расписаний; в химии - анализ
+возможных связей между химическими элементами; в лингвистике это рассмотрение
+вариантов комбинаций букв; для азартных игр это подсчёт частоты выигрышей; в
+экономике - анализ вариантов купли-продажи акций; в криптографии это разработка
+методов шифрования; при доставке почты это рассмотрение вариантов пересылки; в
+спортивных соревнованиях - расчёт количества игр между участниками; в биологии
+- <span style='mso-spacerun:yes'> </span>расшифровка кода ДНК; в военном деле -расположение
+подразделений; в астрологии -анализ расположения планет и созвездий. Как
+видите, комбинаторика необходима практически во всех областях нашей жизни.
+Область применения комбинаторных методов настолько велика, что даже
+перечисление всех возможных мест использования комбинаторного языка является
+нереальным<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>В первом приближении
+можно сказать, что комбинаторика изучает способы выборки и расположения
+предметов, свойства различных конфигураций, которые можно образовать из
+элементов, причем элементами могут быть числа, точки, отрезки, шары, шахматные
+фигуры и т.д. Характерной чертой комбинаторных задач является то, что в них
+речь всегда идет о конечном множестве элементов.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;text-align:justify;text-indent:35.45pt;line-height:
+150%'><span style='font-size:14.0pt;line-height:150%'>Класс задач, решаемый
+комбинаторными методами, настолько огромен, что кажется невозможным научить
+решать все встречающиеся комбинаторные задачи. В настоящем пособии представлены
+методы решения основных классов задач, которые уже решены, и которые, возможно,
+позволят развить интуицию, что <span class=GramE>позволит<span
+style='mso-spacerun:yes'>  </span>решать</span> новые задачи в новых приложениях.
+<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:38.3pt;margin-bottom:
+12.0pt;margin-left:42.55pt;line-height:150%'><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

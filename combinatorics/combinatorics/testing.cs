@@ -136,15 +136,19 @@ namespace combinatorics
             {
                 radTextBox1.Text = "";
                 double result = 0;
+                int verno = 0;
+                int neversno = 0;
                 for (int i = 0; i < checkAnswer.Length; i++)
                 {
                     if (checkAnswer[i] && list[i].Substring(0,1) == "+")
                     {
                         result++;
+                        verno++;
                     }
                     if (checkAnswer[i] && list[i].Substring(0, 1) == "-")
                     {
-                        //result-=.75;
+                        result-=.5;
+                        neversno++;
                     }
                 }
                 if (result <0)
@@ -160,7 +164,8 @@ namespace combinatorics
                     }
                 }
                 double rez = result / Convert.ToDouble(countRightAnswer) * 100;
-                DialogResult dialogResult = MessageBox.Show("Ваш результат: "+ Math.Round(rez,2) + "%","Результат",MessageBoxButtons.OK,MessageBoxIcon.Information);
+                DialogResult dialogResult = MessageBox.Show("Ваш результат: "+ Math.Round(rez,2) + "%\n" +
+                    "Верных ответов: "+ verno + "\nНеверных ответов: "+ neversno, "Результат",MessageBoxButtons.OK,MessageBoxIcon.Information);
                 if (dialogResult == DialogResult.OK)
                 {
                     this.Close();

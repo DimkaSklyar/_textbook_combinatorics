@@ -37,7 +37,6 @@
             Telerik.WinControls.UI.RadTreeNode radTreeNode7 = new Telerik.WinControls.UI.RadTreeNode();
             Telerik.WinControls.UI.RadTreeNode radTreeNode8 = new Telerik.WinControls.UI.RadTreeNode();
             Telerik.WinControls.UI.RadTreeNode radTreeNode9 = new Telerik.WinControls.UI.RadTreeNode();
-            Telerik.WinControls.UI.RadTreeNode radTreeNode10 = new Telerik.WinControls.UI.RadTreeNode();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RadForm1));
             this.fluentTheme1 = new Telerik.WinControls.Themes.FluentTheme();
             this.radMenuItem1 = new Telerik.WinControls.UI.RadMenuItem();
@@ -145,40 +144,33 @@
             this.radTreeView1.Location = new System.Drawing.Point(0, 0);
             this.radTreeView1.Name = "radTreeView1";
             radTreeNode1.Name = "Node1";
-            radTreeNode1.Text = "Предисловие";
-            radTreeNode2.Expanded = true;
+            radTreeNode1.Text = "Элементы комбинаторики";
             radTreeNode2.Name = "Node2";
+            radTreeNode2.Text = "Основные правила комбинаторики";
             radTreeNode3.Name = "Node3";
-            radTreeNode3.Text = "Операции над множествами";
+            radTreeNode3.Text = "Главная теорема комбинаторики (Теорема о включениях и исключениях)";
             radTreeNode4.Name = "Node4";
-            radTreeNode4.Text = "Комбинаторные числа и их рекуррентные соотношения";
-            radTreeNode5.Name = "Node6";
-            radTreeNode5.Text = "Свойства комбинаторных чисел";
-            radTreeNode6.Name = "Node7";
-            radTreeNode6.Text = "Принцип включения-исключения";
-            radTreeNode7.Name = "Node8";
-            radTreeNode7.Text = "Линейные рекуррентные соотношения";
-            radTreeNode2.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode4.Text = "Перестановки";
+            radTreeNode5.Name = "Node5";
+            radTreeNode5.Text = "Размещения";
+            radTreeNode6.Name = "Node6";
+            radTreeNode6.Text = "Сочетания";
+            radTreeNode7.Name = "Node7";
+            radTreeNode7.Text = "Сходства и различия в определениях сочетаний и размещений";
+            radTreeNode8.Name = "Node8";
+            radTreeNode8.Text = "Свойства сочетаний. Бином Ньютона";
+            radTreeNode9.Name = "Node9";
+            radTreeNode9.Text = "Задачи для самостоятельного решения";
+            this.radTreeView1.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
+            radTreeNode1,
+            radTreeNode2,
             radTreeNode3,
             radTreeNode4,
             radTreeNode5,
             radTreeNode6,
-            radTreeNode7});
-            radTreeNode2.Text = "Основные понятия и теорема комбинаторики";
-            radTreeNode8.Expanded = true;
-            radTreeNode8.Name = "Node5";
-            radTreeNode9.Name = "Node9";
-            radTreeNode9.Text = "Примеры решения задач";
-            radTreeNode10.Name = "Node10";
-            radTreeNode10.Text = "Задачи для самостоятельного решения";
-            radTreeNode8.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode9,
-            radTreeNode10});
-            radTreeNode8.Text = "Практикум";
-            this.radTreeView1.Nodes.AddRange(new Telerik.WinControls.UI.RadTreeNode[] {
-            radTreeNode1,
-            radTreeNode2,
-            radTreeNode8});
+            radTreeNode7,
+            radTreeNode8,
+            radTreeNode9});
             this.radTreeView1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.radTreeView1.Size = new System.Drawing.Size(209, 557);
             this.radTreeView1.TabIndex = 0;

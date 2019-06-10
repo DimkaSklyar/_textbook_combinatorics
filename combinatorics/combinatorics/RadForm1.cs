@@ -62,7 +62,7 @@ namespace combinatorics
 
         private void RadForm1_Shown(object sender, EventArgs e)
         {
-            Uri uri = new Uri(path + "\\files\\Предисловие.html");
+            Uri uri = new Uri(path + "\\files\\Элементы комбинаторики.html");
             webBrowser1.Url = uri;
         }
     }
