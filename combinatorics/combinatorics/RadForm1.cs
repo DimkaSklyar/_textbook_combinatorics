@@ -32,7 +32,7 @@ namespace combinatorics
 
         private void radMenuItem3_Click(object sender, EventArgs e)
         {
-            openFileDialog1.InitialDirectory = Application.StartupPath;
+            //openFileDialog1.InitialDirectory = path;
             openFileDialog1.FileName = "*.tst";
             try
             {

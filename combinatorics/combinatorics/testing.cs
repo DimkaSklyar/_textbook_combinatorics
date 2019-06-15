@@ -205,6 +205,9 @@ namespace combinatorics
         private void testing_FormClosed(object sender, FormClosedEventArgs e)
         {
             radForm1.Enabled = true;
+            countQuestion = 0;
+            list.Clear();
+
         }
     }
 }
